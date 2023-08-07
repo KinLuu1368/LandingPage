@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TRÀ SỮA ÍT NGỌT</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="ap.js"></script>
+</head>
+<style></style>
+
+<body onload="loadAnh()">
+    <div class="backtop">
+        <a href="#"><img src="./image/Backtop.png" alt="" style="width: 100%;"></a>
+    </div>
+    <div class="container">
+        <div class="head">
+            <div class="brandName">
+                <h1>LESS SUGAR MILKTEA</h1>
+            </div>
+            <div class="menu">
+                <div><a href="#C1">GIỚI THIỆU</a></div>
+                <div><a href="#C2">SẢN PHẨM</a></div>
+                <div><a href="#C4">CỘNG TÁC</a></div>
+                <div><a href="#C5">LIÊN HỆ</a></div>
+            </div>
+        </div>
+
+        <div class="whitespace" style="height: 30px; background-color: rgb(142, 187, 239)"></div>
+        <div id="C1" style="clear: both; height: 120px">
+            <hr style="
+            height: 4px;
+            background-color: rgb(140, 139, 187);
+            border: 0;
+            width: 60px;
+          " />
+            <h1 style="text-align: center; letter-spacing: 1px; font-size: 45px">
+                GIỚI THIỆU
+            </h1>
+        </div>
+        <div class="gioiThieu">
+            <div class="thongTinGT">
+                <div class="introduce">
+                    <h1 id="status">Uống trà sữa ít ngọt không?</h1>
+                    <button onclick="hienGioiThieu()" id="discover">
+                        <h2 id="discover">KHÁM PHÁ NGAY</h2>
+                    </button>
+                </div>
+            </div>
+            <div class="reasion">
+                <div class="introduce1">
+                    <div class="hinhtrasua">
+                        <img id="lytra" src="./image/lytra.png" />
+                    </div>
+                </div>
+                <div class="noteIntro" id="intro">
+                    <h1 style="
+                color: rgb(24, 109, 195);
+                margin-left: 5%;
+                margin-top: 15px;
+              ">
+                        Nguồn gốc
+                    </h1>
+                    <p style="
+                width: 90%;
+                margin-left: 5%;
+                font-size: 1.3em;
+                margin-top: -15px;
+                letter-spacing: 1px;
+                color: rgb(39, 40, 46);
+                text-align: justify;
+              ">
+                        Được ra đời vào năm 2025 với nhu cầu thực tiễn hiện nay về một
+                        loại thức uống được ưa chuộng của giới trẻ và nỗi lo lắng về các
+                        vấn đề về sức khỏe như béo phì tim mạch nên Thương hiệu "Trà sữa
+                        ít ngọt" (LESS SUGAR MILKTEA) với công thức đặt biệt mang đến chất
+                        lượng trà sữa không đổi nhưng vẫn đảm bảo vấn đề sức khỏe của
+                        người dùng.
+                    </p>
+                </div>
+                <div class="founder" id="found" style="width: 90%">
+                    <h1 style="text-align: center; width: 100%; color: rgb(24, 109, 195)">
+                        NHÀ SÁNG LẬP
+                    </h1>
+                    <div style="width: 30%; float: left">
+                        <img src="./image/founder.jpg" alt="" width="80%" style="
+                  border-radius: 50%;
+                  margin: 10%;
+                  margin-bottom: 5%;
+                  margin-top: -6%;
+                  border: 2px solid rgb(4, 85, 120);
+                " />
+                    </div>
+                    <div class="infofounder" style="float: left; width: 60%">
+                        <h4>FOUNDER: Lưu Tùng Kiên</h4>
+                        <p>
+                            Tiểu sử: Sáng lập ra Trà sữa ít ngọt với sự nghiên cứu tìm tòi
+                            cho ra món thức uống phù hợp với khẩu vị và sức khỏe.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="C2" style="clear: both; height: 120px">
+            <hr style="
+            height: 4px;
+            background-color: rgb(140, 139, 187);
+            border: 0;
+            width: 60px; ;
+          " />
+            <h1 style="text-align: center; letter-spacing: 1px; font-size: 45px">
+                SẢN PHẨM CHÍNH
+            </h1>
+        </div>
+        <div class="product">
+            <div class="sanpham" style="width: 45%; height: 100%; float: left">
+                <div class="sanpham1" style="margin-top: 80px" id="trasua">
+                    <button onclick="hienTsua()" onclick="outTsuaEvent()">
+                        TRÀ SỮA
+                    </button>
+                </div>
+                <div class="sanpham1" id="redtea">
+                    <button onclick="hienHtra()">HỒNG TRÀ</button>
+                </div>
+                <div class="sanpham1" id="smoothie">
+                    <button onclick="hienSto()">SINH TỐ</button>
+                </div>
+            </div>
+            <div class="chitietSP">
+                <div class="sp" id="sp1" onload="loadAnh()">
+                    <h1 class="tensp">TRÀ SỮA TRUYỀN THỐNG</h1>
+                    <p class="mota">
+                        Mô tả: Vị trà đen hòa quyện cũng với sữa, một hương vị thơm ngon
+                        với lượng đường giảm hơn 50% so với loại trà sữa truyền thống.
+                    </p>
+                    <p class="mota">Thêm vị: oloong, hồng trà sữa, nhài, socola,...</p>
+                    <div class="image">
+                        <img src="./image/truyenthong.jpg" name="hinh1" onmouseover="onTsuaEvent()"
+                            onmouseout="outTsuaEvent()" />
+                    </div>
+                </div>
+                <div class="sp" id="sp2" style="display: none" onload="loadAnh()">
+                    <h1 class="tensp">HỒNG TRÀ GIẢM NGỌT</h1>
+                    <p class="mota">
+                        Mô tả: Được chọn lọc từ những loại hồng Trà ngon nhất cho ra vị
+                        trà thơm ngon đậm vị cùng với lượng đường được tùy chọn 30% - 50%
+                        tùy khẩu vị người dùng
+                    </p>
+                    <p class="mota">Thêm vị: Mật ong, Bạc hà, Thảo mộc,...</p>
+                    <div class="image">
+                        <img src="./image/hongtra1.jpg" name="hinh2" onmouseover="onHtraEvent()"
+                            onmouseout="outHtraEvent()" />
+                    </div>
+                </div>
+                <div class="sp" id="sp3" style="display: none">
+                    <h1 class="tensp">SINH TỐ ÍT BÉO</h1>
+                    <p class="mota">
+                        Mô tả: Nguồn nguyên liệu trái cây tươi sạch kết hợp cùng với sữa
+                        giảm ngọt, đường ăn kiêng không calo giúp cho vị ngon của sinh tố
+                        không đổi và không tăng cân.
+                    </p>
+                    <p class="mota">Thêm vị: Chuối, Dâu, Bơ, Dừa,...</p>
+                    <div class="image">
+                        <img src="./image/sinhto1.jpg" name="hinh3" onmouseover="onStoEvent()"
+                            onmouseout="outStoEvent()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu"> 
+            <h1 style="text-align: center; letter-spacing: 2px; font-size: 40px; padding-top: 20px;">MENU BESTSELLER</h1>
+            <div class="col25" style="margin-left: 1%;">
+                <div class="bestsell" style="position: absolute; background-color: goldenrod;border-top-right-radius: 5px;border-bottom-right-radius: 5px; margin-top: 18px;">
+                    <h4 style="padding: 0 20px; ">HOT!!!</h4>
+                </div>
+                <div class="hinhanh">
+                    <img src="./image/truyenthong.jpg" alt="">
+                </div>
+                <div class="nameSP">
+                    <h4>Trà sữa chân châu truyền thống</h4>
+                </div>
+                <div class="price">
+                    <h3>Giá: 30.000VND</h3>
+                </div>
+            </div>
+            <div class="col25">
+                <div class="hinhanh">
+                    <img src="./image/sinhto.jpg" alt="">
+                </div>
+                <div class="nameSP">
+                    <h4>Sinh tố trái cây nhiệt đới</h4>
+                </div>
+                <div class="price">
+                    <h3>Giá: 30.000VND</h3>
+                </div>
+            </div>
+            <div class="col25">
+                <div class="hinhanh">
+                    <img src="./image/hongtra.jpg" alt="">
+                </div>
+                <div class="nameSP">
+                    <h4>Hồng trà Anh Quốc hảo hạn</h4>
+                </div>
+                <div class="price">
+                    <h3>Giá: 30.000VND</h3>
+                </div>
+            </div>
+            <div class="col25">
+                <div class="hinhanh">
+                    <img src="./image/truyenthong1.jpg" alt="">
+                </div>
+                <div class="nameSP">
+                    <h4>Trà sữa chân châu SPECIALTY</h4>
+                </div>
+                <div class="price">
+                    <h3>Giá: 30.000VND</h3>
+                </div>
+            </div>
+        </div>
+
+        <div id="C4" style="clear: both; height: 120px">
+            <hr style="
+            height: 4px;
+            background-color: rgb(140, 139, 187);
+            border: 0;
+            width: 60px;
+          " />
+            <h1 style="text-align: center; letter-spacing: 1px; font-size: 45px">
+                CỘNG TÁC
+            </h1>
+        </div>
+        <div style="
+          width: 100%;
+          height: 600px;
+          background-image: linear-gradient(180deg, white, rgb(222, 222, 254));
+        ">
+            <div class="dautu">
+                <div class="congtac1">
+                    <div class="congtac">
+                        <h1 style="text-align: center; font-size: 35px; margin-top: 60px">
+                            BẠN MUỐN LÀM NHÀ ĐẦU TƯ?
+                        </h1>
+                    </div>
+                    <div class="noidungdautu">
+                        <p style="
+                  font-size: 27px;
+                  text-align: left;
+                  width: 90%;
+                  margin-left: 5%;
+                  letter-spacing: 1px;
+                  line-height: 1.5;
+                ">
+                            Bạn có niềm đam mê với trà sữa và kinh doanh, hiện tại cửa hàng
+                            mở cửa đầu tư mở rộng chi nhánh bằng hình thức nhượng quyền kinh
+                            doanh với mức chiết khấu hấp dẫn cho nhà đầu tư cũng như các đối
+                            tác tương lai của <strong>Trà sữa ít ngọt</strong>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="hangmuc">
+                <div class="col50" style="margin-right: 5%">
+                    <h1>LESS SUGAR 1</h1>
+                    <div class="chinhanh">
+                        <hr />
+                        <h2>Mô hình Quán tối ưu</h2>
+                        <hr />
+                        <p>Diện tích: 60m<sup>2</sup> - 120m<sup>2</sup></p>
+                        <hr />
+                        <p>Trang thiết bị bàn ghế cao cấp</p>
+                        <hr />
+                        <p>GIÁ TỪ</p>
+                        <p style="margin-top: -10px">
+                            <strong style="font-size: 25px">45,000,000 VNĐ</strong>
+                        </p>
+                        <hr />
+                        <div class="lienhe">
+                            <a href="#C5">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col50">
+                    <h1>LESS SUGAR 2</h1>
+                    <div class="chinhanh">
+                        <hr />
+                        <h2>Mô hình Take away</h2>
+                        <hr />
+                        <p>Diện tích: 10m<sup>2</sup> - 30m<sup>2</sup></p>
+                        <hr />
+                        <p>Trang thiết bị cơ bản</p>
+                        <hr />
+                        <p>GIÁ TỪ</p>
+                        <p style="margin-top: -10px">
+                            <strong style="font-size: 25px">15,000,000 VNĐ</strong>
+                        </p>
+                        <hr />
+                        <div class="lienhe">
+                            <a href="#C5">Liên hệ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="C41" class="tuyendung">
+            <div style="border-radius: 15px;border: 4px solid gray; width: 93%; height: 90%; margin-left: 5%;">
+                <h1 style="text-align: center;">THÔNG TIN TUYỂN DỤNG</h1>
+                <div class="hinhtuyendung" id="hinhtuyen1" style="display: none;">
+                    <img src="./image/parner.png" alt="" style="width: 500px; height: 100%; overflow: hidden; margin-left: 100px;">
+                </div>
+                <div class="yeucautuyendung" id="Yeucau">
+                    <h4>Bạn đủ 18 tuổi?</h4>
+                    <h4>Bạn có đam mê với pha chế?</h4>
+                    <h4>Bạn cần tìm việc Full-time/ Part-time?</h4>
+                    <h4>Mức lương hấp dẫn (từ 23.000VND/1h)</h4>
+                    <h4>Hãy liên hệ ngay với chúng tôi!</h4>
+                    <button onclick="hienCV()" id="dienthongtin">ĐIỀN THÔNG TIN LIÊN HỆ</button>
+                </div>
+
+                <div class="hinhtuyendung" id="hinhtuyen">
+                    <img src="./image/parner.png" alt="" style="width: 500px; height: 100%; overflow: hidden; margin-left: 100px;">
+                </div>
+
+                <div class="formtuyendung" id="tuyendung1">
+                    <h1 style="text-align: center;">ỨNG TUYỂN NGAY</h1>
+                    <form action="">
+                        <input type="text" name="" id="hoten" placeholder="Họ tên"> <br>
+                        <input type="text" name="" id="diachi" placeholder="Địa chỉ"> <br><br>
+                        Ngày sinh: <input type="date" name="" id="ngaysinh1"><br><br>
+                        Mô tả bản thân: <br>
+                        <textarea style="width: 80%;" name="" id="" cols="50" rows="5"></textarea>
+                    </form>
+                    <button id="send" onclick="guiTT()">Gửi thông tin</button>
+                </div>
+            </div>
+           
+        </div>
+
+
+        <div id="C5" style="
+          clear: both;
+          height: 180px;
+          background-image: linear-gradient(
+            180deg,
+            rgb(252, 252, 252),
+            rgb(207, 221, 255)
+          );
+        ">
+            <hr style="
+            height: 6px;
+            background-color: rgb(140, 139, 187);
+            border: 0;
+            width: 60px; ;
+          " />
+            <h1 style="
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 45px;
+            color: rgb(113, 113, 113);
+          ">
+                LIÊN HỆ TƯ VẤN <br />
+                HỢP TÁC KINH DOANH
+            </h1>
+        </div>
+        <div style="
+          width: 100%;
+          height: 420px;
+          background-image: linear-gradient(
+            180deg,
+            rgb(207, 221, 255),
+            rgb(252, 256, 258)
+          );
+        ">
+            <div class="thongtinLH">
+                <form action="">
+                    <input class="nhap" type="text" placeholder="Họ tên" id="ten" />
+                    <br />
+                    <input class="nhap" type="text" placeholder="Số điện thoại" id="sdt" />
+                    <br />
+                    <input class="nhap" type="text" placeholder="Email" id="email" />
+                    <br />
+                    <p style="margin-left: 30%; font-size: 25px">
+                        Anh chị chọn mô hình nào?
+                    </p>
+                    <input type="radio" class="mohinh" name="mohinh" id="mohinh" checked="checked" />
+                    <span id="mohinh">Mô hình Quán Less Sugar 1</span>
+                    <input type="radio" name="mohinh" id="mohinh" style="margin-left: 9%" />
+                    <span id="mohinh">Mô hình Take Away Less Sugar 2</span>
+                </form>
+                <button id="send" onclick="guiTT1()">GỬI THÔNG TIN</button>
+            </div>
+        </div>
+        <div id="footer" style="width: 100%; height: 300px; background-color: rgb(64, 54, 171)">
+            <div style="clear: both"></div>
+            <div class="contact">
+                <div class="contact1">
+                    <div class="col-20">
+                        <div>
+                            <h4>GIỚI THIỆU</h4>
+                        </div>
+                        <div class="thongtin1">
+                            <a href="#C1">
+                                <p>Câu chuyện thương hiệu</p>
+                            </a>
+                            <a href="#C2">
+                                <p>Sản phẩm chủ đạo</p>
+                            </a>
+                            <a href="#C4">
+                                <p>Liên hệ hợp tác</p>
+                            </a>
+                            <a href="#C41">
+                                <p>Tuyển dụng</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-20">
+                        <div>
+                            <h4>VĂN PHÒNG ĐẠI DIỆN</h4>
+                        </div>
+                        <div class="thongtin1">
+                            <p>
+                                Công ty Cổ phần TRÀ SỮA ÍT NGỌT 16/55 Nguyễn Thiện Thuật, Phường 2,
+                                Quận 3, Thành phố Hồ Chí Minh
+                            </p>
+
+                            <p>SĐT: +84 (033) 471 0393</p>
+
+                            <p>MST: 01041XXXX</p>
+
+                            <p>
+                                Cấp lần đầu ngày 30 tháng 02 năm 2025 và có thể được sửa đổi
+                                vào từng thời điểm
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banquyen">
+            <h5 style="text-align: center; color: rgb(243, 255, 236)">
+                Bản quyền © 2025 LESS SUGAR MILKTEA. Đã đăng ký bản quyền.
+            </h5>
+        </div>
+    </div>
+</body>
+
+</html>
